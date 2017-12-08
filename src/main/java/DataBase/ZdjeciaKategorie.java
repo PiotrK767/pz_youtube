@@ -29,6 +29,6 @@ public class ZdjeciaKategorie {
             this.idZdjecia = idZdjecia;
             this.idKategorii = idKategorii;
         }
-
+        protected ZdjeciaKategorie(){};
     }
 }

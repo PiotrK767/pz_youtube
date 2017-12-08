@@ -10,7 +10,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.util.Date;
 
-public class Zdjecia {
+
 
     @Entity
     @Setter
@@ -37,4 +37,4 @@ public class Zdjecia {
     protected Zdjecia(){};
 
     }
-}
+

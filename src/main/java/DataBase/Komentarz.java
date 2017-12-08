@@ -1,22 +1,29 @@
 package DataBase;
 
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+
+import jdk.nashorn.internal.objects.annotations.Getter;
+import jdk.nashorn.internal.objects.annotations.Setter;
+import lombok.Builder;
+
+import javax.persistence.Entity;
+
+@Entity
+@Setter
+@Getter
+@Builder
 
 public class Komentarz {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private int _idZdjecia;
-    private int _idUzytkownika;
-    private String Komentarz;
 
-    public Uzytkownik(int _idZdjecia, int _idUzytkownika, String Komentarz){
+    private int idZdjecia;
+    private int idUzytkownika;
+    private String komentarz;
 
-        this._idZdjecia = _idZdjecia;
-        this._idUzytkownika = _idUzytkownika;
-        this.Komentarz = Komentarz;
+    public Komentarz(int idZdjecia, int idUzytkownika, String komentarz){
+
+        this.idZdjecia = idZdjecia;
+        this.idUzytkownika = idUzytkownika;
+        this.komentarz = komentarz;
 
     }
 
