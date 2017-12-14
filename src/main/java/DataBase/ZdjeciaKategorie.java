@@ -1,24 +1,27 @@
 package DataBase;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
+
+import lombok.Getter;
+import lombok.Setter;
 import lombok.Builder;
-import sun.plugin2.gluegen.runtime.StructAccessor;
+
+
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+@Entity
+@Setter
+@Getter
+//@Builder
+
 public class ZdjeciaKategorie {
 
 
-    @Entity
-    @Setter
-    @Getter
-    @Builder
 
-    public class ZdjeciaKategorie{
+
         @Id
         @GeneratedValue(strategy = GenerationType.AUTO)
         private int _id;
@@ -31,4 +34,4 @@ public class ZdjeciaKategorie {
         }
         protected ZdjeciaKategorie(){};
     }
-}
+

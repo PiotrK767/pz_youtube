@@ -1,7 +1,7 @@
 package DataBase;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.Builder;
 
 import javax.persistence.Entity;
@@ -13,7 +13,7 @@ import javax.persistence.Id;
 @Entity
 @Setter
 @Getter
-@Builder
+//@Builder
 
 public class Sl_Kategorii {
 

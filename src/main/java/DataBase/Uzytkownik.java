@@ -1,9 +1,8 @@
 package DataBase;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
-import jdk.nashorn.internal.objects.annotations.Setter;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.Builder;
-import lombok.Generated;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -15,7 +14,7 @@ import javax.persistence.Id;
 @Entity
 @Setter
 @Getter
-@Builder
+//@Builder
 
 public class Uzytkownik{
 
